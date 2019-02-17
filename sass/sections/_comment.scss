@@ -1,0 +1,34 @@
+#comment{
+    background-image: url(../images/medical-parallax-3.jpg); 
+    background-color: rgba(0,0,0,.3);
+    background-blend-mode: color;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 80px 0;
+    height: 400px;
+    p, h3, h2{
+        color: white;
+    }
+    .container-fluid{
+        text-align: center;
+        .container{
+            .logo{
+                margin: 0 auto;
+                width: 100px;
+                img{
+                   border-radius: 100%; 
+                }
+            }
+            .content{
+                text-align: center;
+                padding: 50px 100px;
+                // color: white;
+                p{
+                    font-style: italic;
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

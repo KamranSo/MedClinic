@@ -1,0 +1,87 @@
+#pricing{
+    background: #f8f8f8;
+    padding: 100px 0;
+    .container-fluid{
+        text-align: center;
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 25px;
+            padding-top: 80px;
+            i[class*="check"]{
+                color: $mainColor;
+            }
+            i[class*="times"]{
+                color: #222;
+            }
+
+            ul{
+                line-height: 35px;
+                margin-bottom: 30px;
+                li{
+                    font-size: 16px;
+                    color: #222;
+                }
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                display: inline;
+                font-size: 16px;
+            }
+            h2{
+                color: $mainColor;
+                display: inline;
+                font-weight: normal;
+                font-size: 40px;
+            }
+            .opt{
+                padding-top: 90px;
+                h3{
+                    margin-bottom: 115px;
+                }
+            }
+            
+                .icon{
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translate(50%,-50%);
+                    p{
+                        color: white;
+                        display: inline;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        line-height: 16px;
+                        font-size: 12px;
+                        transform: translate(0%,-50%);
+                    }
+                    i{
+                       font-size: 80px;
+                        color: $mainColor;
+                    }
+                }
+        }
+            .box{
+                height: 520px;
+                width: 265px;
+                border: 1px solid #ececee;
+                padding: 30px;
+                box-sizing: border-box;
+                position: relative;
+                h3{
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .head{
+                    border-bottom: 1px solid #ececee;
+                    padding-bottom: 45px;
+                    margin-bottom: 40px;
+                    
+                }
+                
+            }
+        }
+    }

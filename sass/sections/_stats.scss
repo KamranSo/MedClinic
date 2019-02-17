@@ -1,0 +1,33 @@
+#stats{
+    height: 320px;
+    background: rgba(0, 0, 0, 0.35);
+    background-blend-mode: color-burn;
+    background-image: url(../images/medical-parallax-1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    .container-fluid{
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            text-align: center;
+            height: 350px;
+            align-items: center;
+            .content{
+                h2{
+                    color: $mainColor;
+                    font-size: 40px;
+                    padding: 25px 0 10px;
+                }
+                h3{
+                    color: white;
+                    font-weight: normal;
+                }
+            }
+            .stats-icons{
+                font-size: 40px;
+                color: white;
+            }
+        }
+    }
+}

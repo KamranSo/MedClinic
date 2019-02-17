@@ -1,0 +1,78 @@
+#son{
+    background-color: #222;
+    padding: 69px;
+
+.container-fluid{
+        // text-align: center;
+        
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            border-radius: 1px solid white;
+                  h6{
+                color: #fff;
+                font-size: 18px;
+                line-height: 1.44444;
+                 
+                }
+                    
+                   p{
+                  margin-top: 12px;
+                    color:white;  }
+                    a{
+                        color: white;
+                    }
+                    
+                                .list-xs li{
+                                    margin-top: 16px;
+
+                                    .comment-minimal__link a:hover{
+                                        color:#17a2b8;
+                                    }
+                        
+                         .comment-minimal{
+                             margin-top: 5px;  
+                              .comment-minimal__auther{
+                            font-size: 14px;
+                            font-style: italic;
+                            color: rgba(255,255,255,.4);
+                            .comment-minimal__link {
+                                font-size: 16px;
+                                line-height: 1.625;
+                                    background: white; 
+                                    .comment-minimal__link a{
+                                        color: white;
+                                    }      
+                                    
+                                    .list-xs{
+                                        margin-top: -16px;
+                                        
+                                    }
+                      
+                               }
+                            }
+                            
+ 
+                            }
+       
+
+                     }
+                  }
+            }
+        }
+    .footer{
+        .container-fluid{
+            background: black;
+            .footer-corporate__inner {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: -15px;
+                margin-right: -15px;
+                color: #888;
+            }
+        }
+    }
+    

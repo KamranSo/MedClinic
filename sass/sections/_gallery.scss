@@ -1,0 +1,81 @@
+#gallery{
+    padding: 80px 0 100px;
+    .container-fluid{
+        p{
+            padding-left: 15px;
+            padding-right: 15px;
+            display: inline;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 30px;
+            column-gap: 30px;
+            padding-top: 30px;
+            .mainImg{
+                width: 363px;
+                height: 273px;
+                position: relative;
+                cursor: pointer;
+                span{
+                    position: absolute;
+                    padding: 7px 5px;
+                    top: 20px;
+                    left: 20px;
+                    font-size: 12px;
+                    border-radius: 5px;
+                    background: white;
+                    font-style: italic;
+                    font-family: $fontfamily;
+                    margin: auto;
+                    z-index: 1;
+                }
+                &:hover{
+                    .overlay{
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+                .overlay{
+                    width: 363px;
+                    height: 274px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: white;
+                    background-color: rgba($mainColor, 0.6);
+                    transition: .5s;
+                    transform: scale(.5);
+                    box-sizing: border-box;
+                    padding: 40px;
+                    opacity: 0;
+                    p,h3{
+                        color: white;
+                    }
+                    .icon{
+                        font-size: 40px;
+                    }
+                    .head{
+                        p{
+                            font-style: italic;
+                            padding: 15px 0;
+                        }
+                    }
+                    .content{
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    .arrow{
+                        font-size: 40px;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

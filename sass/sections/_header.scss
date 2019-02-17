@@ -1,0 +1,107 @@
+#header{
+    
+    .panel-top{
+        @extend .container ;
+        display: grid;
+        grid-template-columns: 3.5fr 1fr 1fr;
+        text-align: center;
+        box-sizing: border-box;
+        align-items: center;
+        border-bottom: 1px solid #ececee;
+        height: 50px;
+        .social-icons{
+            width: 196px;
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+        }
+        .text{
+            text-align: left;
+            width: 760px;
+        }
+        .registration{
+            @extend .social-icons ;
+            border-right: 1px solid #ececee;
+            padding-left: 9px;
+            ul{
+                li{
+                    padding: 0;
+                    padding-right: 15px;
+                    a{
+                        text-transform: none;
+                        font-size: 12px;
+                    }
+                }
+            } 
+        }
+    }
+ 
+    .panel-bottom{
+        @extend .container ;
+        height: 100px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 380px 310px 280px 180px;
+        img{
+            width: 40%;
+        }
+        .adress, .phone, .time{
+            display: grid;
+        }
+        .phone{
+            grid-template-columns: 60px 207px;
+            border-right: 1px solid #ececee;
+            .content{
+                padding-left: 10px;
+            }
+            .social-icons{
+                padding-left: 25px;
+            }
+        }
+        .time{
+            padding-left: 25px;
+            grid-template-columns: 42px 125px;
+        }
+        .adress{
+            grid-template-columns: 45px 270px;
+            border-right: 1px solid #ececee;
+        }
+        .social-icons{
+            padding: 5px 0;
+            a{
+                color: $mainColor;
+                font-size: 30px;
+            }
+        }
+        .content{
+            p{
+                font-size: 11.5px;
+                line-height: 20px
+            }
+        }
+    }
+    nav{
+        .container-fluid{
+            background: white;
+            
+        }
+            .container{
+                position: fixed;
+            }
+        .social-icons{
+            padding: 20px 0;
+        }
+        li{
+            padding: 0;
+            padding-right: 26px;
+        }
+        a{
+            color: #222;
+            font-size: 12px;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+}
